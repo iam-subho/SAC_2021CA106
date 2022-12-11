@@ -7,61 +7,7 @@
   margin-bottom:0.6cm;
 }
 
-.timeline .events {
-    border-top: 3px solid #e9ecef;
-}
-.timeline .events .event-list {
-    display: block;
-    position: relative;
-    text-align: center;
-    padding-bottom: 70px;
-    margin-right: 0;
-}
-.timeline .events .event-list:before {
-    content: "";
-    position: absolute;
-    height: 36px;
-    border-right: 2px dashed #dee2e6;
-    top: 0;
-}
-.timeline .events .event-list .event-date {
-    position: absolute;
-    top: 38px;
-    left: 0;
-    right: 0;
-    width: 75px;
-    margin: 0 auto;
-    border-radius: 4px;
-    padding: 2px 4px;
-}
-@media (min-width: 1140px) {
-    .timeline .events .event-list {
-        display: inline-block;
-        width: 24%;
-        padding-top: 45px;
-    }
-    .timeline .events .event-list .event-date {
-        top: -12px;
-    }
-}
-.bg-soft-primary {
-    background-color: rgba(64,144,203,.3)!important;
-}
-.bg-soft-success {
-    background-color: rgba(71,189,154,.3)!important;
-}
-.bg-soft-danger {
-    background-color: rgba(231,76,94,.3)!important;
-}
-.bg-soft-warning {
-    background-color: rgba(249,213,112,.3)!important;
-}
-.card {
-    border: none;
-    margin-bottom: 24px;
-    -webkit-box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
-    box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
-}
+
 .teammember{
   position: relative;
 }
@@ -82,8 +28,10 @@
 <head>
   <meta charset="utf-8">
   <title>SAC</title>
+  <link href="assets/aos/aos.css" rel="stylesheet">
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/timeline/css/timeline.min.css" rel="stylesheet">
 
 
 </head>
@@ -123,7 +71,7 @@
  
     <section id="about" class="about">
 
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="row">
 
           <div class="col-lg-6 d-flex flex-column justify-content-center">
@@ -142,7 +90,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 d-flex ">
+          <div class="col-lg-6 d-flex " data-aos="zoom-out" data-aos-delay="200">
             <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
 
@@ -156,7 +104,7 @@
     <div  id="activity">
     <section class="features">
 
-      <div class="container">
+      <div class="container" data-aos="fade-up">
 
         <header class="section-header text-center">
           <h2>Activity</h2>
@@ -172,42 +120,42 @@
           <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
             <div class="row align-self-center gy-4">
 
-              <div class="col-md-6" >
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
                 <div class="feature-box d-flex ">
                   <i class="bi bi-check"></i>
                   <h3>Eos aspernatur rem</h3>
                 </div>
               </div>
 
-              <div class="col-md-6" >
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300" >
                 <div class="feature-box d-flex ">
                   <i class="bi bi-check"></i>
                   <h3>Facilis neque ipsa</h3>
                 </div>
               </div>
 
-              <div class="col-md-6" >
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400" >
                 <div class="feature-box d-flex ">
                   <i class="bi bi-check"></i>
                   <h3>Volup amet voluptas</h3>
                 </div>
               </div>
 
-              <div class="col-md-6">
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
                 <div class="feature-box d-flex ">
                   <i class="bi bi-check"></i>
                   <h3>Rerum omnis sint</h3>
                 </div>
               </div>
 
-              <div class="col-md-6">
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
                 <div class="feature-box d-flex ">
                   <i class="bi bi-check"></i>
                   <h3>Alias possimus</h3>
                 </div>
               </div>
 
-              <div class="col-md-6">
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
                 <div class="feature-box d-flex ">
                   <i class="bi bi-check"></i>
                   <h3>Repellendus mollitia</h3>
@@ -227,7 +175,7 @@
 
     <section id="event" class="services">
 
-      <div class="container" >
+      <div class="container" data-aos="fade-up">
 
         <header class="section-header text-center">
           <h2>Event</h2>
@@ -236,7 +184,7 @@
 
         <div class="row ">
 
-          <div class="col-lg-4 col-md-6"  >
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300" >
             <div class="card border-0 shadow p-3 mb-5 bg-white rounded h-100" style="background-color: white;">
               <div class="card-body">
                 <i class="text-center ri-discuss-line icon"></i>
@@ -248,7 +196,7 @@
           </div>
 
 
-          <div class="col-lg-4 col-md-6"  >
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400" >
             <div class="card border-0 shadow p-3 mb-5 bg-white rounded h-100" style="background-color: white;">
               <div class="card-body">
                 <i class="text-center ri-discuss-line icon"></i>
@@ -259,7 +207,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6"  >
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500" >
             <div class="card border-0 shadow p-3 mb-5 bg-white rounded h-100" style="background-color: white;">
               <div class="card-body">
                 <i class="text-center ri-discuss-line icon"></i>
@@ -280,7 +228,7 @@
 
     <section id="team" class="team">
 
-      <div class="container" >
+      <div class="container"  data-aos="fade-up">
 
         <header class="section-header text-center">
           <h2>Team</h2>
@@ -289,7 +237,7 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-3 col-md-6 d-flex " >
+          <div class="col-lg-3 col-md-6 d-flex " data-aos="fade-up" data-aos-delay="100" >
             <div class="teammember">
                 <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
                 <div class="social">
@@ -304,7 +252,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex" >
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200" >
             <div class="teammember">
                 <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
                 <div class="social">
@@ -319,7 +267,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex" >
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300" >
             <div class="teammember">            
                 <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
                 <div class="social">
@@ -335,7 +283,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex" >
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="teammember">
                 <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
                 <div class="social">
@@ -358,67 +306,36 @@
 
     
   <div class="buttonmargin"></div>
-  <div id="timelinesection">
-   <section>
-    <div class="container">
-      <div class="row">
-          <div class="col-lg-12">
-              <div class="card" >
-                  <div class="card-body" >
-                      <h4 class="card-title mb-5 text-center">Timeline</h4>
-      
-                      <div class="timeline" dir="ltr" >
-                          <ul class="list-inline events">
-                              <li class="list-inline-item event-list" >
-                                  <div class="px-4">
-                                      <div class="event-date bg-soft-primary text-primary">2 June</div>
-                                      <h5 class="font-size-16">Event One</h5>
-                                      <p class="text-muted">It will be as simple as occidental in fact it will be Occidental Cambridge friend</p>
-                                      <div>
-                                          <a href="#" class="btn btn-primary btn-sm">Read more</a>
-                                      </div>
-                                  </div>
-                              </li>
-                              <li class="list-inline-item event-list" >
-                                  <div class="px-4">
-                                      <div class="event-date bg-soft-success text-success">5 June</div>
-                                      <h5 class="font-size-16">Event Two</h5>
-                                      <p class="text-muted">Everyone realizes why a new common language one could refuse translators.</p>
-                                      <div>
-                                          <a href="#" class="btn btn-primary btn-sm">Read more</a>
-                                      </div>
-                                  </div>
-                              </li>
-                              <li class="list-inline-item event-list" >
-                                  <div class="px-4">
-                                      <div class="event-date bg-soft-danger text-danger">7 June</div>
-                                      <h5 class="font-size-16">Event Three</h5>
-                                      <p class="text-muted">If several languages coalesce the grammar of the resulting simple and regular</p>
-                                      <div>
-                                          <a href="#" class="btn btn-primary btn-sm">Read more</a>
-                                      </div>
-                                  </div>
-                              </li>
-                              <li class="list-inline-item event-list" >
-                                  <div class="px-4">
-                                      <div class="event-date bg-soft-warning text-warning">8 June</div>
-                                      <h5 class="font-size-16">Event Four</h5>
-                                      <p class="text-muted">Languages only differ in their pronunciation and their most common words.</p>
-                                      <div>
-                                          <a href="#" class="btn btn-primary btn-sm">Read more</a>
-                                      </div>
-                                  </div>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-     
-          </div>
-      </div>
-    </section>
-  </div>
 
+  <div id="timelinesection">
+    <section>
+  <div class="timeline" data-aos="fade-up">
+    <div class="timeline__wrap">
+      <div class="timeline__items">
+        <div class="timeline__item" >
+          <div class="timeline__content" >
+            <h2>2018</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__content">
+            <h2>2017</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__content">
+            <h2>2016</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+ </div>
   <section class="footer text-center">&copy;Subhojit</section>
 
  </main>
@@ -428,7 +345,35 @@
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/aos/aos.js"></script>
+  <script src="assets/timeline/js/timeline.min.js"></script>
+<script>
+  (function() {
+  "use strict";
+  /**
+   * Animation on scroll
+   */
+  function aos_init() {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false
+    });
+  }
+  window.addEventListener('load', () => {
+    aos_init();
+  });
 
+
+
+})();
+
+jQuery('.timeline').timeline({
+  mode: 'horizontal'
+});
+
+</script>
 
 
 
