@@ -1,13 +1,438 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+.buttonmargin{
+  margin-bottom:0.6cm;
+}
+
+.timeline .events {
+    border-top: 3px solid #e9ecef;
+}
+.timeline .events .event-list {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-bottom: 70px;
+    margin-right: 0;
+}
+.timeline .events .event-list:before {
+    content: "";
+    position: absolute;
+    height: 36px;
+    border-right: 2px dashed #dee2e6;
+    top: 0;
+}
+.timeline .events .event-list .event-date {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    right: 0;
+    width: 75px;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+@media (min-width: 1140px) {
+    .timeline .events .event-list {
+        display: inline-block;
+        width: 24%;
+        padding-top: 45px;
+    }
+    .timeline .events .event-list .event-date {
+        top: -12px;
+    }
+}
+.bg-soft-primary {
+    background-color: rgba(64,144,203,.3)!important;
+}
+.bg-soft-success {
+    background-color: rgba(71,189,154,.3)!important;
+}
+.bg-soft-danger {
+    background-color: rgba(231,76,94,.3)!important;
+}
+.bg-soft-warning {
+    background-color: rgba(249,213,112,.3)!important;
+}
+.card {
+    border: none;
+    margin-bottom: 24px;
+    -webkit-box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+    box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+}
+.teammember{
+  position: relative;
+}
+
+.teammember .social {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    width: auto;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    z-index: 9;
+}
+
+
+</style>
+
 <head>
-    <title>SAC Competition</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>SAC</title>
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+
 </head>
+
 <body>
-    <div class="text-center">Hello World</div>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SAC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#activity">Activity</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#event">Event</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team" >Team</a>
+          </li>
+          <li>
+             <a class="nav-link" href="#timelinesection">Timeline</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+ 
+    <section id="about" class="about">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <div class="content">
+              <h3>About Us</h3>
+              <h2>Dolore eu nostrud minim Lorem incididunt ipsum exercitation aute minim proident.</h2>
+              <p>
+                Excepteur qui nostrud in excepteur consequat fugiat velit dolor commodo non.Nisi velit velit fugiat labore nulla ea aliquip anim aliquip. Id do minim id ex adipisicing. Labore fugiat id non reprehenderit tempor sunt. Nulla irure occaecat dolore commodo. Veniam cupidatat velit irure ex anim qui amet labore et. Elit Lorem proident consequat incididunt. Aliquip sint amet occaecat magna qui in laborum Lorem proident excepteur ex.
+              </p>
+              <div class="text-center text-lg-start">
+                <a href="#" class="btn btn-primary btn-sm d-inline-flex ">
+                  <span>Read More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex ">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section>  
+
+    <div class="buttonmargin"></div>
+
+    <div  id="activity">
+    <section class="features">
+
+      <div class="container">
+
+        <header class="section-header text-center">
+          <h2>Activity</h2>
+          <p>Laboriosam et omnis fuga quis dolor direda fara</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <img src="assets/img/features.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+            <div class="row align-self-center gy-4">
+
+              <div class="col-md-6" >
+                <div class="feature-box d-flex ">
+                  <i class="bi bi-check"></i>
+                  <h3>Eos aspernatur rem</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" >
+                <div class="feature-box d-flex ">
+                  <i class="bi bi-check"></i>
+                  <h3>Facilis neque ipsa</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" >
+                <div class="feature-box d-flex ">
+                  <i class="bi bi-check"></i>
+                  <h3>Volup amet voluptas</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="feature-box d-flex ">
+                  <i class="bi bi-check"></i>
+                  <h3>Rerum omnis sint</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="feature-box d-flex ">
+                  <i class="bi bi-check"></i>
+                  <h3>Alias possimus</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="feature-box d-flex ">
+                  <i class="bi bi-check"></i>
+                  <h3>Repellendus mollitia</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>    
+      </div>
+
+    </section>
+  </div>
+
+    <div class="buttonmargin"></div>
+
+    <section id="event" class="services">
+
+      <div class="container" >
+
+        <header class="section-header text-center">
+          <h2>Event</h2>
+          <p>Veritatis et dolores facere numquam et praesentium</p>
+        </header>
+
+        <div class="row ">
+
+          <div class="col-lg-4 col-md-6"  >
+            <div class="card border-0 shadow p-3 mb-5 bg-white rounded h-100" style="background-color: white;">
+              <div class="card-body">
+                <i class="text-center ri-discuss-line icon"></i>
+                <h3 class="card-title text-center">Special title treatment</h3>
+                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                <a href="#" class="btn btn-primary btn-sm">Read More<i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6"  >
+            <div class="card border-0 shadow p-3 mb-5 bg-white rounded h-100" style="background-color: white;">
+              <div class="card-body">
+                <i class="text-center ri-discuss-line icon"></i>
+                <h3 class="card-title text-center">Special title treatment</h3>
+                <p>Laborum qui incididunt exercitation minim amet excepteur cillum ipsum commodo ex quis fugiat.</p>
+                <a href="#" class="btn btn-primary btn-sm" >Read More<i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6"  >
+            <div class="card border-0 shadow p-3 mb-5 bg-white rounded h-100" style="background-color: white;">
+              <div class="card-body">
+                <i class="text-center ri-discuss-line icon"></i>
+                <h3 class="card-title text-center">Special title treatment</h3>
+                <p>Cupidatat fugiat sunt ea Lorem sunt.Labore irure adipisicing proident occaecat aliquip ullamco deserunt tempor sit irure esse.</p>
+                <a href="#" class="btn btn-primary btn-sm" >Read More<i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+    <div class="buttonmargin"></div>
+
+    <section id="team" class="team">
+
+      <div class="container" >
+
+        <header class="section-header text-center">
+          <h2>Team</h2>
+          <p>Our hard working team</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex " >
+            <div class="teammember">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                <h4>Subhojit</h4>
+                <span>Chief Executive Officer</span>
+                <p>Aliquip deserunt do pariatur nisi pariatur sunt dolore ex non est nisi in.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex" >
+            <div class="teammember">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                <h4>Priti</h4>
+                <span>Product Manager</span>
+                <p>Voluptate adipisicing excepteur in deserunt dolor elit nisi ea cupidatat.Incididunt elit cupidatat id magna dolor labore in et nostrud adipisicing sit adipisicing.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex" >
+            <div class="teammember">            
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>     
+                <h4>Subham</h4>
+                <span>CTO</span>
+                <p>Anim eu qui incididunt occaecat tempor velit dolore mollit.Magna consectetur consectetur voluptate id sunt reprehenderit laborum qui sint commodo est eiusmod quis.</p>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex" >
+            <div class="teammember">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                <h4>Piu</h4>
+                <span>Accountant</span>
+                <p>Elit in aliquip sint consectetur aute ex id in sit voluptate Lorem cillum elit eu.Officia eu quis cillum quis fugiat.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    
+  <div class="buttonmargin"></div>
+  <div id="timelinesection">
+   <section>
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="card" >
+                  <div class="card-body" >
+                      <h4 class="card-title mb-5 text-center">Timeline</h4>
+      
+                      <div class="timeline" dir="ltr" >
+                          <ul class="list-inline events">
+                              <li class="list-inline-item event-list" >
+                                  <div class="px-4">
+                                      <div class="event-date bg-soft-primary text-primary">2 June</div>
+                                      <h5 class="font-size-16">Event One</h5>
+                                      <p class="text-muted">It will be as simple as occidental in fact it will be Occidental Cambridge friend</p>
+                                      <div>
+                                          <a href="#" class="btn btn-primary btn-sm">Read more</a>
+                                      </div>
+                                  </div>
+                              </li>
+                              <li class="list-inline-item event-list" >
+                                  <div class="px-4">
+                                      <div class="event-date bg-soft-success text-success">5 June</div>
+                                      <h5 class="font-size-16">Event Two</h5>
+                                      <p class="text-muted">Everyone realizes why a new common language one could refuse translators.</p>
+                                      <div>
+                                          <a href="#" class="btn btn-primary btn-sm">Read more</a>
+                                      </div>
+                                  </div>
+                              </li>
+                              <li class="list-inline-item event-list" >
+                                  <div class="px-4">
+                                      <div class="event-date bg-soft-danger text-danger">7 June</div>
+                                      <h5 class="font-size-16">Event Three</h5>
+                                      <p class="text-muted">If several languages coalesce the grammar of the resulting simple and regular</p>
+                                      <div>
+                                          <a href="#" class="btn btn-primary btn-sm">Read more</a>
+                                      </div>
+                                  </div>
+                              </li>
+                              <li class="list-inline-item event-list" >
+                                  <div class="px-4">
+                                      <div class="event-date bg-soft-warning text-warning">8 June</div>
+                                      <h5 class="font-size-16">Event Four</h5>
+                                      <p class="text-muted">Languages only differ in their pronunciation and their most common words.</p>
+                                      <div>
+                                          <a href="#" class="btn btn-primary btn-sm">Read more</a>
+                                      </div>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+     
+          </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="footer text-center">&copy;Subhojit</section>
+
+ </main>
+
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+
+
+
 </body>
+
 </html>
 
-
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.js"></script>
